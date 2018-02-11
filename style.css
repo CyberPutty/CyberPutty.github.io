@@ -1,0 +1,196 @@
+body
+{ 
+  min-width:960px;
+  margin-top: 30px;
+  font-family:cambria;
+  color: #b7bec8ff;
+  background-color:#161f2c;
+ 
+}
+.container
+{
+  
+}
+.box
+{
+
+  border:3px solid;
+  
+}
+.icon
+{
+ position:relative;
+  top:15px;
+  margin-right:20px;
+ display: inline;
+  border:5px solid;
+}
+.sub
+{
+ 
+  position:absolute;
+  color:black;
+  top:8px;
+  left:350px;
+  display:inline;
+  vertical-align:bottom;
+}
+.white{
+  background-color:white;
+}
+.title
+{
+  position:relative;
+  background-color:#161f2c;
+  z-index:10;
+  padding-bottom:10px;
+  border-bottom:2px solid;
+}
+.social
+{
+
+  margin-right: 10px;
+  float:right;
+  width:20px;
+  height:20px;
+}
+
+.aside
+{
+  position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  font-family:monospace;
+  z-index:10;
+  padding-top:20px;
+  
+}
+.nav
+{
+  min-width:100%;
+  display:block;
+  list-style-type:none;
+  font-size:18px;
+}
+a{
+  color:inherit;
+}
+a:hover
+{
+  color:inherit;
+  
+}
+.seperator
+{
+  position:relative;
+  z-index:1;
+  bottom:150px;
+  border-left:1px solid;
+  margin-left:120px;
+  height:1685px;
+  
+}
+#subject
+{
+  margin-top:1%;
+  height:150px;
+  width:32.5%;
+}
+#contactSubmit
+{
+  display:block;
+}
+
+.names
+{
+  width:30%;
+}
+.content
+{ 
+  margin-left: 5%;
+  padding: 20px;
+}
+.padNotes
+{
+  padding-top:20px;
+
+}
+.techList
+{
+  border-top:1px solid;
+  width:100px;
+  padding:0;
+  list-style-type:none;
+}
+
+.section
+{
+  height:500px;
+  
+}
+#currentProject
+{
+  width:80%;
+}
+.carouselControl
+{
+  display:inline;
+}
+
+#beach{
+ 
+  position:relative;
+  display:inline;
+  filter:opacity(85%);
+  width:800px;
+  
+ 
+}
+.banner
+{
+  
+  
+}
+.crop{
+ 
+  position:absolute;
+  display:block;
+ overflow:hidden;
+  bottom:-8px;
+  left:150px;
+  width:780px;
+  height:75px;
+  border-radius:5px;
+}
+.contactForm
+{
+  margin-top:10%;
+}
+p
+{
+  padding-top:10px;
+}
+
+.rule{
+  position:relative;
+  bottom:20px;
+  left:20%;
+  height:1px;
+  width:90%;
+ background-color: white;
+  border-bottom:1px solid;
+}
+.link{
+  target-new: tab;
+  
+}
+
+.padContent
+{
+  padding-top:10px;
+  padding-left:5%;
+}
+.cursor
+{
+  cursor:pointer;
+}

@@ -1,25 +1,31 @@
 var pomodoro={
-             img:"Pomodoro_pn6lhf.png",
+             img:"./images/Pomodoro.png",
              name:"Pomodoro Timer",
              notes:"A Pomodoro Timer with task list. Drag and drop is utilized to provide one list for brainstorming and one for whatever your currently working on",
              link:"https://codepen.io/Cyberputty/full/NXjRgX/",
               };
               
 var ticTacToe={
-             img:"Tic-Tac-Toe_gu8rqv.png",
+             img:"./images/Tic-Tac-Toe.png",
              name:"Tic Tac Toe",
-             notes:"The challenge for this assignment was to create the computer's logic and have the program call itself to evaluate winning conditions",
+             notes:"The challenge for this was to create the AI logic and a game loop",
              link: "https://codepen.io/Cyberputty/full/QaPwzo/"};
 var simon={
-             img:"Simon_jeetxy.png",
+             img:"./images/Simon.png",
              name:"Simon",
-             notes:"Simon the classic memory game, the visuals are entirely css. Converts to and from string id's to randomize using numbers rather than index",
+             notes:"Simon the classic memory game, the visuals are entirely css. Converts to and from string id's, generates random sequence per game",
              link:"https://codepen.io/Cyberputty/full/aqdOWy/"};
+var twitch={
+             img:"./images/TwitchApp.png",
+             name:"Twitch Notifications",
+             notes:"App using Twitch API for notifications",
+             link:"https://codepen.io/Cyberputty/full/wydGdM/"};
 var $currentProject=$('#currentProject');
 var $projectNote=$('#projectNote');
 var $projectTitle=$('#projectTitle');
 var $link=$('#link');
-var carousel=[simon,ticTacToe,pomodoro];
+
+var carousel=[simon,pomodoro,twitch,ticTacToe];
 forward();
 var current= carousel[0];
 var index;
@@ -40,7 +46,7 @@ back();
      }
        $currentProject.attr({
   alt: current+"project",
-  src:"http://res.cloudinary.com/duytlootx/image/upload/v1518017748/"+current.img
+  src:current.img
   });
     $link.attr('href', current.link)
      $projectTitle.text(current.name);
@@ -54,7 +60,7 @@ back();
      }
        $currentProject.attr({
   alt: current+"project",
-  src:"http://res.cloudinary.com/duytlootx/image/upload/v1518017748/"+current.img
+  src:current.img
   });
     $link.attr('href', current.link)
     $projectTitle.text(current.name);

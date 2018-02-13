@@ -1,6 +1,6 @@
 body
 { 
-  min-width:960px;
+  
   margin-top: 30px;
   font-family:cambria;
   color: #b7bec8ff;
@@ -9,7 +9,7 @@ body
 }
 .container
 {
-  
+  min-width:960px;
 }
 .box
 {
@@ -112,7 +112,7 @@ a:hover
 }
 .padNotes
 {
-  padding-top:20px;
+  padding-top:50%;
 
 }
 .techList
@@ -130,7 +130,7 @@ a:hover
 }
 #currentProject
 {
-  width:80%;
+  width:85%;
 }
 .carouselControl
 {
@@ -180,10 +180,7 @@ p
  background-color: white;
   border-bottom:1px solid;
 }
-.link{
-  target-new: tab;
-  
-}
+
 
 .padContent
 {
@@ -193,4 +190,8 @@ p
 .cursor
 {
   cursor:pointer;
+}
+.carousel
+{
+ margin:10%;
 }

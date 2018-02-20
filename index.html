@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
 <title>My Website</title>
 
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 <script
 			  src="https://code.jquery.com/jquery-3.3.1.slim.js"
 			  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
 			  crossorigin="anonymous"></script>
 
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="styleAlternate.css">
 <head>
 <body id="home">
-<div class="container box">
+<div class="container">
 <div class="">
-<div class="title row"> 
-  <div class="col">
+  <div class="navigation">
+<div class="row"> 
+  <div class="el logo">
 <h1 class="icon">MC</h1>
-    <div class="banner">
-    <div class="crop">
-      <img  id="beach"src="http://res.cloudinary.com/duytlootx/image/upload/v1518110472/newsprint_bluefill_p3q6q4.jpg">
+</div>
+    <div class="el">
+    <div >
+     <!-- <img  id="beach"src="http://res.cloudinary.com/duytlootx/image/upload/v1518110472/newsprint_bluefill_p3q6q4.jpg"> -->
      </div>
+       <div class="nav">
+       <ul>
+       <a href="#home" class=""><li>home</li></a> 
+      <a href="#aboutLink" class=""><li>about</li></a> 
+      <a href="#portfolioLink" class=""><li>portfolio</li></a> 
+        <a href="#contactLink" class=""><li>contact</li></a>
+       </ul>
+       </div>
       </div>
-  <h4 class="sub">front end/web development</h4>
-  <div class="padSocial">
+  
+  <div class="el">
+    
    <a href=""><img class="social" src="http://res.cloudinary.com/duytlootx/image/upload/v1518102031/Google_worbop.svg" alt="Facebook Link"></a>
    <a href=""><img class="social" src="http://res.cloudinary.com/duytlootx/image/upload/v1518102025/twitter_dmpxfp.svg" alt="Facebook Link"></a>
     <a href=""><img class="social" src="http://res.cloudinary.com/duytlootx/image/upload/v1518102037/Git_rqwydz.svg" alt="Facebook Link"></a>
@@ -33,115 +45,90 @@
     
     
   </div>
-  
-  </div>
-  </div>
-  <div class="row section">
-  <div class="col-1">
-    <ul class='nav aside'>
-      <li><a href="#home">home</a></li>
-      <li><a href="#portfolio">portfolio</a></li>
-      <li><a href="#contact">contact</a></li>
-      </ul><div class="seperator"></div>
   </div>
   
- 
-    <div class="col content">
-   
-      <p>Hi! My name is Michael and I'm a front end web developer based in Portland, OR.</p>
-      <p>
-       Currently I am attending FreeCodeCamp and have received
-Front End certification.
-I am pursuing their Data Visualization certifcation, 
-followed by Backend certification for full stack development. In my spare time you can find me dabbling in C# and Unity for game development.
-      </p>
-    </div>
-    <div class="col-2">
-      <div class="padNotes">
-      <h5>front end</h5>
-      <ul class="techList">
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>Javascript</li>
-        <li>JQuery</li>
-        <li>Bootstrap</li>
-        <li>SQL</li>
-      </ul>
-       </div>
-    </div>
   </div>
-  <div id="portfolio" class="row">
-    <div class="col-1">
-      
-      
-    </div>
-    <div class='col-10 padContent'>
-      <h1>Portfolio</h1><div class="rule"></div></div>
-    </div>
+<div class="main">
+  
+
+    <img id="hi" src=".\images\LetsWorkTogether5.svg">
+
+<div class="intro">Hi, I'm Michael... Let's Work Together.</div>
+
+</div>
+<div id="aboutLink"class="offset"></div>
+<div id="about" class="">
+
+  <h1 class="mainText ">What I Do!</h1>
+
+  <p class="mainText">
+    I started attending freecodecamp in 2017 and have received my front-end certification.<br/>
+    This year I will finish my data visualization and backend certification for fullstack development with focus on react, nodejs, 
+    and mongodb.
+    When I'm not working with javascript I spend my time working with C# and the Unity Framework for game development.</p>
     
-    <div class="row section" >
-      
-      <div class="col-1">
-  
+    <div class="skillrow">
+      <div class="skillColumn">
+        <img class="cert" src=".\images\codecampcert.svg">
       </div>
+    <div class="skillColumn">
+
       
-      <div class="col content text-center">
+      <div class="el1">
+        <img class="skills" src=".\images\htmlLogo.svg"><h3 class="skills">HTML5</h3>
+        <img class="skills" src=".\images\cssLogo.svg"><h3 class="skills">CSS3</h3>
+      </div>
+      <div class="el1">
+<img class="skills" src=".\images\jsLogo.svg"><h3 class="skills">Javascript</h3>
+<img class="skills" src=".\images\jqueryLogo.svg"><h3 class="skills">JQuery</h3>
+      </div>
+      <div class="el1">
+<img class="skills" src=".\images\sqlLogo.svg"><h3 class="skills">SQL</h3>
+<img class="skills bootAdj" src=".\images\bootstrap-solid.svg"><h3 class="skills">Bootstrap</h3>
+      </div>
+</div>
+</div>
+</div>
+<div id="portfolioLink"class="offset"></div>
+<div id="portfolio">
+  <h1 class="portfolioltr">Portfolio Projects</h1>
+  <div class="portfolioposition">
+  <div class="portfolioTitle">
+   <h1 id="projectTitle">Pomodoro Timer</h1>
+  </div>
         <div class="carousel">
-          <h4 id="projectTitle">Pomodoro Timer</h4>
-          <h1 id="back" class="carouselControl unselectable cursor"><</h1>
+         <div class="bounds"><a  class="unselectable"><img id="prevProject"class="preview" alt="Pomodoro Timer"></a></div>
+         <h1 id="back" class="carouselControl controldim unselectable cursor"><</h1>
         <a id="link" target:"_blank" class="unselectable"href=""><img id="currentProject" alt="Pomodoro Timer"></a>
-         <h1 id="forward" class="carouselControl unselectable cursor">></h1> 
+         <h1 id="forward" class="carouselControl controldim unselectable cursor">></h1>
+      <div class="bounds">   <a class="unselectable"><img id="nextProject"class="preview" alt="Pomodoro Timer"></a></div>
        </div>
-      </div>
-       
-      <div class="col-3">
-        <h5 class="padNotes" id="projectNote"></h5>
-       
-      </div>
-      </div>
-      <div id="contact" class="row ">
-       <div class="col-1">
-      
-      
-    </div>
-    <div class='col-10 padContent'>
-      <h1>Contact</h1><div class="rule"></div></div>
-    </div> 
-         <div class="row section" >
-      <div class="col-1">
-  
-      </div>
-      <div class="col content">
-        <h5>If you have an questions on my portfolio or are interested in working with me on your next project feel free to contact me!</h5>
-         <div class="contactForm">
-           
-  <form>
-    <div class="names">
-    <label>First Name</label>
-    <input type="text" id="firstName" name="firstname" placeholder="first name">
-    </div>
-    <div class="names">
-    <label>Last Name</label>
-    <input type="text" id="lastName" name="lastname" placeholder="last name">
-     </div>
-    <div class="subSpace">
-    <textarea id="subject" name="subject" placeholder="How can I help?"></textarea>
-    <input id="contactSubmit" class=""type="submit" value="Submit">
-  </div>
-      </form>
-</div> 
-      </div>
-       
-      <div class="col-2">
-       
-      </div>
-      </div>
-      </div>
-    
- </div>
+       <div class="note">
+         <div id="projectNote"></div>
+
+       </div>
+       </div>
+</div>
+<div id="contactLink"class="offset"></div>
+<div id="contact">
+ <h1>Contact</h1> 
+ 
+ <p class="contactblurb">If you have an questions on my portfolio or are interested in working with me on your next project feel free to contact me via email <a href="mailto:michaelcordero88@gmail.com">michaelcordero88@gmail.com</a> </p>
+<form>
+  <label>First Name:</label> <input value="your name">
+  <label>Last Name:</label><input value="your last name">
+  <div class="blocktext">
+<label class="blocktext">How can I help?</label><textarea name="" id=""class="blocktext" cols="50" rows="15">
+  </textarea><input type="submit" value="Send" class="blocktext align-right">
+</div>
+</form>
+
+
 </div>
 
-</body>
-<script src=".\scripts/script.js"></script>
 
-</html>
+</div>
+</div>
+<script src="./scripts/script.js"></script>
+</body>
+  

@@ -21,14 +21,24 @@ var twitch={
              notes:"App using Twitch API for notifications.",
              link:"https://codepen.io/Cyberputty/full/wydGdM/"};
 var $currentProject=$('#currentProject');
+var $prevProject=$('#prevProject');
+var $nextProject=$('#nextProject');
 var $projectNote=$('#projectNote');
 var $projectTitle=$('#projectTitle');
 var $link=$('#link');
 
 var carousel=[simon,pomodoro,twitch,ticTacToe];
+var first= carousel[0];
+var last= carousel[carousel.length-1];
 forward();
-var current= carousel[0];
+// initialize
+var current;
 var index;
+var prev;
+var next;
+
+console.log(carousel[carousel.length-1]);
+
 $('#forward').on('click',function(){
   
 forward();
@@ -43,25 +53,97 @@ back();
       index=carousel.indexOf(current);
      if(index<carousel.length-1 ) {
      current=carousel[index+1];
+     prev=carousel[index];
+     next=carousel[index+2];
+     }
+     else{
+       current=first;
+     prev=last;
+     next=carousel[1];
      }
        $currentProject.attr({
   alt: current+"project",
   src:current.img
   });
-    $link.attr('href', current.link)
+  if(prev){
+    $prevProject.attr({
+    alt: prev+"project",
+    src:prev.img
+    });
+ 
+  }
+  else{
+
+    $prevProject.attr({
+      alt: last+"project",
+      src: last.img
+      });
+  }
+  if(next)
+  {
+    $nextProject.attr({
+      alt: next+"project",
+      src:next.img
+      });
+     
+     }
+     else{
+      $nextProject.attr({
+        alt: first+"project",
+        src: first.img
+        });
+     }
+  
+   
+     $link.attr('href', current.link)
      $projectTitle.text(current.name);
-    $projectNote.text(current.notes);
+     $projectNote.text(current.notes);
   }
 
   function back(){
       index=carousel.indexOf(current);
      if(index>0) {
      current=carousel[index-1];
+     prev=carousel[index-2];
+     next=carousel[index];
      }
+     else{
+      current=last;
+    prev=carousel[carousel.length-2];
+    next=first;
+    }
        $currentProject.attr({
   alt: current+"project",
   src:current.img
   });
+  if(prev){
+    $prevProject.attr({
+    alt: prev+"project",
+    src:prev.img
+    });
+ 
+  }
+  else{
+
+    $prevProject.attr({
+      alt: last+"project",
+      src: last.img
+      });
+  }
+  if(next)
+  {
+    $nextProject.attr({
+      alt: next+"project",
+      src:next.img
+      });
+     
+     }
+     else{
+      $nextProject.attr({
+        alt: first+"project",
+        src: first.img
+        });
+      }
     $link.attr('href', current.link)
     $projectTitle.text(current.name);
     $projectNote.text(current.notes);

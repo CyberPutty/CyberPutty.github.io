@@ -66,11 +66,11 @@ margin: 5%;
 }
 .nav ul
 { 
-  font-size: 28px;
+ font-size: 26px;
   list-style-type:none;
 }
 .nav ul li
-{
+{ 
   letter-spacing: 3px;
   display:inline;
 }
@@ -135,6 +135,10 @@ a
   justify-content:center;
   
   width:50%;
+}
+.skill{
+  height:100px;
+  width:25%;
 }
 .skills
 {

@@ -143,15 +143,10 @@ a:hover
   position:relative;
   display:inline;
   filter:opacity(85%);
-  width:800px;
-  
+ 
  
 }
-.banner
-{
-  
-  
-}
+
 .crop{
  
   position:absolute;

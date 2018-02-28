@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>My Website</title>
 
 
@@ -11,12 +13,12 @@
 			  crossorigin="anonymous"></script>
 
 <link rel="stylesheet" type="text/css" href="styleAlternate.css">
-<head>
+</head>
 <body id="home">
 <div class="container">
 <div class="">
   <div class="navigation">
-<div class="row"> 
+<div class="row mediaL"> 
   <div class="el logo">
 <h1 class="icon">MC</h1>
 </div>
@@ -101,10 +103,14 @@
    <h1 id="projectTitle">Pomodoro Timer</h1>
   </div>
         <div class="carousel">
-         <div class="bounds"><a  class="unselectable"><img id="prevProject"class="preview" alt="Pomodoro Timer"></a></div>
+         <div class="bounds"><a class="unselectable"><img id="prevProject"class="preview" alt="Pomodoro Timer"></a></div>
+         <div class="blockPosition">
          <h1 id="back" class="carouselControl controldim unselectable cursor"><</h1>
+         </div>
         <a id="link" target:"_blank" class="unselectable"href=""><img id="currentProject" alt="Pomodoro Timer"></a>
+        <div class="blockPosition">
          <h1 id="forward" class="carouselControl controldim unselectable cursor">></h1>
+        </div>
       <div class="bounds">   <a class="unselectable"><img id="nextProject"class="preview" alt="Pomodoro Timer"></a></div>
        </div>
        <div class="note">
@@ -119,10 +125,10 @@
  
  <p class="contactblurb">If you have an questions on my portfolio or are interested in working with me on your next project feel free to contact me via email <a href="mailto:michaelcordero88@gmail.com">michaelcordero88@gmail.com</a> </p>
 <form>
-  <label>First Name:</label> <input value="your name">
-  <label>Last Name:</label><input value="your last name">
-  <div class="blocktext">
-<label class="blocktext">How can I help?</label><textarea name="" id=""class="blocktext" cols="50" rows="15">
+  <label>Name:</label> <input placeholder="Your name">
+  <label>Email:</label><input placeholder="For contact purpose only">
+<div class="blocktext">
+  <label class="blocktext">How can I help?</label><textarea name="" id=""class="blocktext" cols="50" rows="15">
   </textarea><input type="submit" value="Send" class="blocktext align-right">
 </div>
 </form>

@@ -1,12 +1,18 @@
 body
 {
+
  margin:0px;
+ min-width: 1080px;
 }
 
+.mediaL{
+min-width: 960px;
+}
 .row
-{
+{ 
+  
   position: fixed;
-color: #62929e;
+  color: #62929e;
   background-color: #393d3f;
   display: flex;
   height: 75px;
@@ -18,16 +24,15 @@ color: #62929e;
 }
 .el
 { 
-margin: 5%;
-  
- 
+
+margin-left: 5%;
+margin-right: 5%;
 }
 .el1
 {
   height:150px;
   display:flex;
   justify-content: flex-start;
-  
   
 }
 #currentProject
@@ -36,13 +41,19 @@ margin: 5%;
   height: 400px;
 
 }
+.social
+{
+padding-right:5px;
+padding-bottom:15px;
+width:30px;
+height:30px;
+}
 .intro
 {
   color: #fdfdff;
   font-size: 40px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 2px;
-  position:absolute;
   
   margin-top:920px;
   position: absolute; /* position the top  edge of the element at the middle of the parent */
@@ -60,17 +71,14 @@ margin: 5%;
  letter-spacing: -.5px;
  line-height: 2em;
 }
-.nav
-{
 
-}
 .nav ul
 { 
  font-size: 26px;
   list-style-type:none;
 }
 .nav ul li
-{ 
+{
   letter-spacing: 3px;
   display:inline;
 }
@@ -93,7 +101,8 @@ margin: 5%;
    padding-right: 2px;
 }
 .main
-{ background-color:#9dac93;
+{ 
+  background-color:#9dac93;
   display: flex;
 height:1080px;
 }
@@ -107,6 +116,7 @@ height:1080px;
 
   font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   height:1000px;
+ 
   background-color: #d6d5c9;
   /*
   d9dbbc slight green 
@@ -163,7 +173,7 @@ a
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #9dac93;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   height:1000px;
   justify-content: center;
   align-items: center;
@@ -176,11 +186,15 @@ a
 }
 .carousel
 {
+  position: relative;
   z-index: 10;
   display:flex; 
   justify-content: center; 
   align-items: center;
   height:500px;
+}
+.blockPosition{
+  display: block;
 }
 #currentProject{
 border-radius: 2px;
@@ -189,8 +203,8 @@ width:840px;
 }
 #forward{
  position:absolute;
-margin-top:60px;
-margin-left:820px;
+bottom:100px;
+margin-left:-110px;
 text-align: left;
 padding:50px;
 
@@ -202,10 +216,11 @@ transform: scale(1.1,1.1);
 #back{
  
   position: absolute;
+  bottom:100px;
+  margin-left:-90px;
   text-align:right;
   padding:50px;
-  margin-top:60px;
-  margin-right: 840px;
+
  
 }
 #back:hover{

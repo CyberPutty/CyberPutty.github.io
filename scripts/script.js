@@ -1,3 +1,17 @@
+var reactRecipe={
+img: "./images/reactRecipeBox.png",
+name: "React Recipe Box",
+notes: "Recipe Box Using React and Local Storage",
+link: "https://codepen.io/Cyberputty/full/qxGBYZ/"
+
+};
+var reactLeaderBoard={
+  img:"./images/ReactLeaderBoard.png",
+  name:"React Leader Board",
+  notes:"Leader board using react.",
+  link: "https://codepen.io/Cyberputty/full/YejGov/"
+
+};
 var pomodoro={
              img:"./images/Pomodoro.png",
              name:"Pomodoro Timer",
@@ -27,7 +41,7 @@ var $projectNote=$('#projectNote');
 var $projectTitle=$('#projectTitle');
 var $link=$('#link');
 
-var carousel=[simon,pomodoro,twitch,ticTacToe];
+var carousel=[simon,reactRecipe,twitch,pomodoro,ticTacToe,reactLeaderBoard];
 var first= carousel[0];
 var last= carousel[carousel.length-1];
 forward();
@@ -149,3 +163,4 @@ back();
     $projectNote.text(current.notes);
        
   }
+

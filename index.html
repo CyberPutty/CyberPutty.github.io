@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>My Website</title>
+<title>Michael Cordero| Front-End Web Developer</title>
 
 
 <script
@@ -61,17 +61,17 @@
 <div id="aboutLink"class="offset"></div>
 <div id="about" class="">
 
-  <h1 class="mainText ">What I Do!</h1>
+  <h1 class="mainText">What I Do!</h1>
 
   <p class="mainText">
-    I started attending freecodecamp in 2017 and have received my front-end certification.<br/>
+    I started attending freecodecamp in 2017 and have received my front-end certification.<br />
     This year I will finish my data visualization and backend certification for fullstack development with focus on react, nodejs, 
-    and mongodb.
+    and mongodb.<br />
     When I'm not working with javascript I spend my time working with C# and the Unity Framework for game development.</p>
-    
+
     <div class="skillrow">
       <div class="skillColumn">
-        <img class="cert" src=".\images\codecampcert.svg">
+       <a class="cert" href="https://www.freecodecamp.org/cyberputty/front-end-certification" alt="Front-End Certificate"> <img class="cert"  src=".\images\codecampcert.svg"></a>>
       </div>
     <div class="skillColumn">
 
@@ -124,12 +124,14 @@
  <h1>Contact</h1> 
  
  <p class="contactblurb">If you have an questions on my portfolio or are interested in working with me on your next project feel free to contact me via email <a href="mailto:michaelcordero88@gmail.com">michaelcordero88@gmail.com</a> </p>
-<form>
-  <label>Name:</label> <input placeholder="Your name">
-  <label>Email:</label><input placeholder="For contact purpose only">
+<form method="POST" action="https://formspree.io/michaelcordero88@gmail.com">
+  <label>Name:</label> <input placeholder="Your name" type="text" name="name">
+  <label>Email:</label><input name="email" placeholder="Your email" type="email">
 <div class="blocktext">
-  <label class="blocktext">How can I help?</label><textarea name="" id=""class="blocktext" cols="50" rows="15">
-  </textarea><input type="submit" value="Send" class="blocktext align-right">
+  <label class="blocktext">How can I help?</label><textarea name="message" placeholder="Your message" id=""class="blocktext" cols="50" rows="15">
+  </textarea>
+  <input type="hidden" name="_next" value="./thanks.html" />
+  <input type="submit" value="Send" class="blocktext align-right">
 </div>
 </form>
 

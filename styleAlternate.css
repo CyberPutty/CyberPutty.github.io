@@ -30,6 +30,7 @@ margin-right: 5%;
 }
 .el1
 {
+  
   height:150px;
   display:flex;
   justify-content: flex-start;
@@ -66,7 +67,8 @@ height:30px;
 .mainText
 {
  
-  padding: 2%;
+  padding: 10px;
+  margin: 20px;
  font-size: 28px;
  letter-spacing: -.5px;
  line-height: 2em;
@@ -143,7 +145,7 @@ a
   display:flex;
   flex-direction: column;
   justify-content:center;
-  
+  margin-top: 20px;
   width:50%;
 }
 .skill{
@@ -158,8 +160,8 @@ a
 }
 .cert
 {
-
   height:400px;
+  margin: auto;
 }
 .skillrow
 {
@@ -299,6 +301,7 @@ user-select: none; /* Standard */
   font-size: inherit;
  display:block;
 }
+
 label{
   margin:10px;
 }

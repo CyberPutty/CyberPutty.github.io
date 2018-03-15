@@ -1,16 +1,13 @@
+
+
 body
 {
-
- margin:0px;
- min-width: 1080px;
+  margin:0px;
+  overflow-x:hidden;
 }
 
-.mediaL{
-min-width: 960px;
-}
 .row
 { 
-  
   position: fixed;
   color: #62929e;
   background-color: #393d3f;
@@ -20,56 +17,92 @@ min-width: 960px;
   width: 100vw;
   flex-direction: row; 
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
 .el
 { 
-
 margin-left: 5%;
 margin-right: 5%;
 }
-
-#currentProject
-{
-  display:flex;
-  height: 400px;
+#projectTitle{
+font-size: 5vh;
 
 }
+
+#projectNote{
+  font-size: 3vh;
+  width: 80vw;
+  margin: auto;
+
+}
+
 .social
 {
 padding-right:5px;
-padding-bottom:15px;
 width:30px;
 height:30px;
 }
 .intro
 {
   color: #fdfdff;
-  font-size: 40px;
+  font-size: 4vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 2px;
   
-  margin-top:920px;
+  margin-top:85vh;
   position: absolute; /* position the top  edge of the element at the middle of the parent */
     left: 50%; /* position the left edge of the element at the middle of the parent */
 
     transform: translate(-50%, -50%);
   
 }
-
 .mainText
 {
  
   padding: 10px;
-  margin: 20px;
- font-size: 28px;
+  margin-left: 2vh;
+  margin-right: 2vh;
+ font-size: 3vh;
  letter-spacing: -.5px;
  line-height: 2em;
 }
+.nav{
+  display:flex;
 
+}
+.hamcontainer{
+  flex-grow:3;
+ display: flex;
+ justify-content: flex-start; 
+}
+.hamburger{
+
+ height: 50px;
+ margin: 20px;
+}
+@media screen and (max-width:1200px){
+  
 .nav ul
 { 
- font-size: 26px;
+ visibility: hidden;
+ position: absolute;
+}
+
+
+}
+ @media screen and (min-width:1200px){
+ .hamburger{
+   visibility: hidden;
+   position: absolute;
+ }
+ .hamcontainer{
+  visibility: hidden;
+  position: absolute;
+ }
+ } 
+  .nav ul
+{ 
+ font-size: 3vh;
   list-style-type:none;
 }
 .nav ul li
@@ -78,18 +111,19 @@ height:30px;
   display:inline;
 }
 
+
+
 .logo
 {
   
-
   height:100%;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 .icon
 { 
   
 
-  font-size:36px;
+  font-size:2.25em;
    border: 3px solid;
    text-align: center;
    letter-spacing: -2px;
@@ -99,19 +133,20 @@ height:30px;
 { 
   background-color:#9dac93;
   display: flex;
-height:1080px;
+height:100vh;
 }
 #hi{
-  width: 100vw
+  width: 100vw;
+}
+.col{
+  height:30vh;
 }
 #about
 {
   display:flex;
   flex-direction: column;
-
   font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  height:1000px;
- 
+  height:92.5vh;
   background-color: #d6d5c9;
   /*
   d9dbbc slight green 
@@ -134,27 +169,32 @@ a
 }
 
 .skillrow{
+  margin: auto;
+  height:60vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
+ 
 }
 .skillcolumn{
   display:grid;
-  grid-template-columns:1fr 1fr 1fr 1fr;
-
-  grid-row-gap: 4vw;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  grid-row-gap: 2vw;
+  grid-column-gap: 4vw;
 }
 .skills{
-  width: 50%;
-  height: auto;
+  width:7vh;
+  
+  height: 7vh;
 }
 
 .cert
 {
-  width: 75%;
-  height: auto;
-  margin: auto;
+  width: 100%;
+  height: 30vh;
+
 }
 
 #portfolio
@@ -163,7 +203,7 @@ a
   background-color: #9dac93;
   display: flex;
   flex-direction: column;
-  height:1000px;
+  height:92.5vh;
   justify-content: center;
   align-items: center;
 }
@@ -171,49 +211,89 @@ a
 {
   letter-spacing: 2px;
   font-family: serif;
-  font-size: 38px;
+  font-size: 3.5vh;
 }
-@media screen and (max-width: 1600px){
-#currentProject{
-  border-radius: 2px;
-  height:350px;
-  width:700px;
-  
-}
-.preview
-{
-  
-  height:100px;
-  width:200px;
-border-radius: 1px;
-  filter: opacity(70%);
-}
-
-}
-@media screen and (min-width: 1600px){
  
   #currentProject{
+    
+    display:flex;
     border-radius: 2px;
-    height:420px;
-    width:840px;
+    height:35vh;
+    width:70vh;
+   
     }
     .preview
 {
   
-  height:200px;
-  width:400px;
+  height:18vh;
+  width:36vh;
 border-radius: 1px;
   filter: opacity(70%);
 }
-  }
 .carousel
 {
+  height:50vh;
   position: relative;
   z-index: 10;
   display:flex; 
   justify-content: center; 
   align-items: center;
-  height:500px;
+ 
+}
+@media screen and (max-width:960px){
+
+.preview{
+   position: absolute;
+  visibility: hidden !important;
+}
+#currentProject{
+  z-index:4;
+  height:35vh;
+  margin: 0px;
+}
+
+#about{
+  height:185vh;
+}
+.skillrow{
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20vh;
+
+}
+}
+@media screen and (max-width:500px){
+#currentProject{
+  width:90vw;
+  height:auto;
+}
+.carousel{
+  height:20vh !important;
+}
+
+} 
+
+
+.portfolioTitle
+{
+  height:15vh;
+ display: flex;
+ flex-direction: column;
+justify-content: center;
+align-items:center;
+
+
+}
+.note
+{
+  height:20vh;
+  font-size: 3vh;
+  text-align: center;
+}
+
+.bounds{
+  z-index: 3;
+padding: 40px;
 }
 .blockPosition{
   display: block;
@@ -222,29 +302,29 @@ border-radius: 1px;
   
 
 #forward{
- position:absolute;
-bottom:100px;
-margin-left:-110px;
-text-align: left;
-padding:50px;
+  position:absolute;
+  padding-right:40px;
+  margin-left:-132px;
+  transform: translateY(-70px); 
+text-align: right;
+
 
 }
 #forward:hover{
-transform: scale(1.1,1.1);
+
 }
 
-#back{
- 
-  position: absolute;
-  bottom:100px;
-  margin-left:-90px;
-  text-align:right;
-  padding:50px;
-
+#back{ 
+  position:absolute;
+  padding-left:30px;
+  transform: translateY(-70px);
+  vertical-align:middle;
+  text-align:left;
  
 }
+
 #back:hover{
-  transform: scale(1.1,1.1);
+  
   }
 
 .carouselControl
@@ -265,31 +345,6 @@ cursor: pointer;
 
   text-shadow: 0em 0em 0.2em white;
 }
-.portfolioposition
-{
- margin-bottom:100px;
-}
-.portfolioTitle
-{
- 
- justify-content: center;
-display: flex;
-
-}
-.note
-{
-
-  font-size: 28px;
-  display:flex; 
-  justify-content: center; 
-  align-items: center;
-}
-
-.bounds{
-  z-index: 3;
-  
-padding: 40px;
-}
 .unselectable
 {
   -webkit-user-select: none; /* Safari */        
@@ -303,7 +358,7 @@ user-select: none; /* Standard */
   background-color:#d6d5c9;
   flex-direction: column;
   display:flex;
-  height:1000px;
+  height:92.5vh;
   justify-content: flex-start;
   align-items: center;
 }
@@ -311,6 +366,10 @@ user-select: none; /* Standard */
   font-family: inherit;
   font-size: inherit;
  display:block;
+ width:40vw;
+ min-width:15em;
+ height:25vh;
+
 }
 
 label{
@@ -329,10 +388,10 @@ form{
   display: flex;
  align-items: flex-start;
  flex-direction: column;
-  font-size: 24px;
+  font-size: 3vh;
 }
 .contactblurb{
-font-size: 28px;
+font-size: 3vh;
 
 }
 

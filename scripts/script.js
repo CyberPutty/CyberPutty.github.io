@@ -12,6 +12,12 @@ var reactLeaderBoard={
   link: "https://codepen.io/Cyberputty/full/YejGov/"
 
 };
+var dungeonCrawler={
+             img:"./images/dungeonCrawler.png",
+             name:"Dungeon Crawler React",
+             notes:"A dungeon crawler using react and vanilla javascript, all floors randomly generated",
+             link:"https://codepen.io/Cyberputty/full/XEagwd/",
+}
 var pomodoro={
              img:"./images/Pomodoro.png",
              name:"Pomodoro Timer",
@@ -27,13 +33,19 @@ var ticTacToe={
 var simon={
              img:"./images/Simon.png",
              name:"Simon",
-             notes:"Simon the classic memory game, the visuals are entirely css. Converts to and from string id's, generates random sequence per game.",
+             notes:"Simon the classic memory game,all vanilla css and javascript",
              link:"https://codepen.io/Cyberputty/full/aqdOWy/"};
 var twitch={
              img:"./images/TwitchApp.png",
              name:"Twitch Notifications",
              notes:"App using Twitch API for notifications.",
              link:"https://codepen.io/Cyberputty/full/wydGdM/"};
+var gameOfLife={
+            img:"./images/GameOfLife.png",
+            name:"Conway's Game of Life",
+            notes:"Mathematician Conway's Game of Life: Simulates cell life and death over generations.",
+            link:"https://codepen.io/Cyberputty/full/XEjQqW/"
+}
 var $currentProject=$('#currentProject');
 var $prevProject=$('#prevProject');
 var $nextProject=$('#nextProject');
@@ -41,7 +53,7 @@ var $projectNote=$('#projectNote');
 var $projectTitle=$('#projectTitle');
 var $link=$('#link');
 
-var carousel=[simon,reactRecipe,twitch,pomodoro,ticTacToe,reactLeaderBoard];
+var carousel=[gameOfLife,dungeonCrawler,reactRecipe,twitch,pomodoro,ticTacToe,simon,reactLeaderBoard];
 var first= carousel[0];
 var last= carousel[carousel.length-1];
 forward();

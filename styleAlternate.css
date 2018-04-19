@@ -85,10 +85,24 @@ height:30px;
 .nav ul
 { 
  visibility: hidden;
- position: absolute;
+ font-size: 3vh !important;
 }
 
-
+.toggleMenu{
+  visibility: visible !important;
+}
+.hamMenu{
+  height: auto;
+  text-align: center;
+}
+.nav ul li{
+  position: relative;
+   display: block !important;
+}
+.hide{
+  visibility: hidden !important;
+  position: absolute;
+}
 }
  @media screen and (min-width:950px){
  .hamburger{
@@ -108,8 +122,9 @@ height:30px;
 .nav ul li
 {
   letter-spacing: 3px;
-  display:inline;
+  display: inline !important;
 }
+
 
 
 
@@ -267,6 +282,13 @@ border-radius: 1px;
   width:90vw;
   height:auto;
 }
+
+h3.skills{
+  visibility: hidden;
+}
+.social{
+  visibility: hidden;
+}
 .carousel{
   height:20vh !important;
 }
@@ -323,9 +345,7 @@ text-align: right;
  
 }
 
-#back:hover{
-  
-  }
+
 
 .carouselControl
 {
@@ -358,7 +378,7 @@ user-select: none; /* Standard */
   background-color:#d6d5c9;
   flex-direction: column;
   display:flex;
-  height:92.5vh;
+  height:100vh;
   justify-content: flex-start;
   align-items: center;
 }
@@ -368,7 +388,7 @@ user-select: none; /* Standard */
  display:block;
  width:40vw;
  min-width:15em;
- height:25vh;
+ height:20vh;
 
 }
 

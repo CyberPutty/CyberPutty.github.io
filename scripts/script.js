@@ -176,3 +176,31 @@ back();
        
   }
 
+$('.hamburger').on('click',function(){
+  $('.nav ul').toggleClass('toggleMenu');
+  $('.break').html('<hr/>');
+  $('.row').toggleClass('hamMenu');
+  $('.hamcontainer img').toggleClass('hide');
+  $('ul').append(" <div id='toggleClose'><hr/><a><li id='close'>close</li></a><div>");
+  $('#close').bind('click', function(){
+    $('.hamcontainer img').toggleClass('hide');
+    $('.nav ul').toggleClass('toggleMenu');
+    $('.row').toggleClass('hamMenu');
+    $('#toggleClose').remove();
+
+  });
+
+});
+
+function screenWidth(x) {
+  if (x.matches) { // If media query matches
+  $('.nav ul').removeClass('toggleMenu');
+  $('.break').html('|');
+  $('.row').removeClass('hamMenu');
+  $('.hamcontainer img').removeClass('hide');
+  } 
+}
+
+var x = window.matchMedia("(min-width: 950px)");
+screenWidth(x); // Call listener function at run time
+x.addListener(screenWidth); // Attach listener function on state changes

@@ -46,6 +46,26 @@ var gameOfLife={
             notes:"Mathematician Conway's Game of Life: Simulates cell life and death over generations.",
             link:"https://codepen.io/Cyberputty/full/XEjQqW/"
 }
+var barchart={
+            img: "./images/barchart.png",
+            name: "D3.js Barchart",
+            notes: "Uses GDP dataset",
+            link: "https://codepen.io/Cyberputty/full/vRarVX/"
+}
+var scatterplot={
+            img: "./images/scatterplot.png",
+            name: "D3.js Scatterplot",
+            notes: "scatterplot using dataset from alpe d'huez on doping in professional cycling",
+            link: "https://codepen.io/Cyberputty/full/pVRjKQ/"        
+}
+var heatmap={
+            img: "./images/heatmap.png",
+            name: "D3.js Heatmap",
+            notes: "Heatmap using dataset for global land surface tempurature",
+            link: "https://codepen.io/Cyberputty/full/BxWWWx/"
+}
+
+let carouselSet=[{},{},{},{},{}];
 var $currentProject=$('#currentProject');
 var $prevProject=$('#prevProject');
 var $nextProject=$('#nextProject');
@@ -53,7 +73,7 @@ var $projectNote=$('#projectNote');
 var $projectTitle=$('#projectTitle');
 var $link=$('#link');
 
-var carousel=[gameOfLife,dungeonCrawler,reactRecipe,twitch,pomodoro,ticTacToe,simon,reactLeaderBoard];
+var carousel=[gameOfLife,dungeonCrawler,reactRecipe,twitch,pomodoro,ticTacToe,simon,reactLeaderBoard,scatterplot,barchart,heatmap];
 var first= carousel[0];
 var last= carousel[carousel.length-1];
 forward();

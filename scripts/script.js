@@ -22,7 +22,7 @@ var pomodoro={
              img:"./images/Pomodoro.png",
              name:"Pomodoro Timer",
              notes:"A Pomodoro Timer with task list. Drag and drop is utilized to provide one list for brainstorming and one for whatever your currently working on.",
-             link:"https://codepen.io/Cyberputty/full/NXjRgX/",
+             link:"https://codepen.io/Cyberputty/full/NXjRgX/"
               };
               
 var ticTacToe={
@@ -34,7 +34,8 @@ var simon={
              img:"./images/Simon.png",
              name:"Simon",
              notes:"Simon the classic memory game,all vanilla css and javascript",
-             link:"https://codepen.io/Cyberputty/full/aqdOWy/"};
+             link:"https://codepen.io/Cyberputty/full/aqdOWy/"
+            };
 var twitch={
              img:"./images/TwitchApp.png",
              name:"Twitch Notifications",
@@ -65,7 +66,9 @@ var heatmap={
             link: "https://codepen.io/Cyberputty/full/BxWWWx/"
 }
 
-let carouselSet=[{},{},{},{},{}];
+
+
+
 var $currentProject=$('#currentProject');
 var $prevProject=$('#prevProject');
 var $nextProject=$('#nextProject');

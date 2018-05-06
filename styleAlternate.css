@@ -184,10 +184,11 @@ a
 }
 
 .skillrow{
-  margin: auto;
-  height:60vw;
+  padding: 20px;
+  margin:auto;
+  height:30vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 4fr;
   justify-content: center;
   align-items: center;
  
@@ -272,8 +273,8 @@ border-radius: 1px;
 }
 .skillrow{
   grid-template-columns: auto;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 20vh;
+  grid-template-rows: 1fr 1fr 4fr;
+  grid-gap: 0px;
 
 }
 }

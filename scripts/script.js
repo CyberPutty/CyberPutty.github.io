@@ -1,73 +1,3 @@
-var reactRecipe={
-img: "./images/reactRecipeBox.png",
-name: "React Recipe Box",
-notes: "Recipe Box Using React and Local Storage",
-link: "https://codepen.io/Cyberputty/full/qxGBYZ/"
-
-};
-var reactLeaderBoard={
-  img:"./images/ReactLeaderBoard.png",
-  name:"React Leader Board",
-  notes:"Leader board using react.",
-  link: "https://codepen.io/Cyberputty/full/YejGov/"
-
-};
-var dungeonCrawler={
-             img:"./images/dungeonCrawler.png",
-             name:"Dungeon Crawler React",
-             notes:"A dungeon crawler using react and vanilla javascript, all floors randomly generated",
-             link:"https://codepen.io/Cyberputty/full/XEagwd/",
-}
-var pomodoro={
-             img:"./images/Pomodoro.png",
-             name:"Pomodoro Timer",
-             notes:"A Pomodoro Timer with task list. Drag and drop is utilized to provide one list for brainstorming and one for whatever your currently working on.",
-             link:"https://codepen.io/Cyberputty/full/NXjRgX/"
-              };
-              
-var ticTacToe={
-             img:"./images/Tic-Tac-Toe.png",
-             name:"Tic Tac Toe",
-             notes:"The challenge for this was to create the AI logic and a game loop.",
-             link: "https://codepen.io/Cyberputty/full/QaPwzo/"};
-var simon={
-             img:"./images/Simon.png",
-             name:"Simon",
-             notes:"Simon the classic memory game,all vanilla css and javascript",
-             link:"https://codepen.io/Cyberputty/full/aqdOWy/"
-            };
-var twitch={
-             img:"./images/TwitchApp.png",
-             name:"Twitch Notifications",
-             notes:"App using Twitch API for notifications.",
-             link:"https://codepen.io/Cyberputty/full/wydGdM/"};
-var gameOfLife={
-            img:"./images/GameOfLife.png",
-            name:"Conway's Game of Life",
-            notes:"Mathematician Conway's Game of Life: Simulates cell life and death over generations.",
-            link:"https://codepen.io/Cyberputty/full/XEjQqW/"
-}
-var barchart={
-            img: "./images/barchart.png",
-            name: "D3.js Barchart",
-            notes: "Uses GDP dataset",
-            link: "https://codepen.io/Cyberputty/full/vRarVX/"
-}
-var scatterplot={
-            img: "./images/scatterplot.png",
-            name: "D3.js Scatterplot",
-            notes: "scatterplot using dataset from alpe d'huez on doping in professional cycling",
-            link: "https://codepen.io/Cyberputty/full/pVRjKQ/"        
-}
-var heatmap={
-            img: "./images/heatmap.png",
-            name: "D3.js Heatmap",
-            notes: "Heatmap using dataset for global land surface tempurature",
-            link: "https://codepen.io/Cyberputty/full/BxWWWx/"
-}
-
-
-
 
 var $currentProject=$('#currentProject');
 var $prevProject=$('#prevProject');
@@ -76,18 +6,26 @@ var $projectNote=$('#projectNote');
 var $projectTitle=$('#projectTitle');
 var $link=$('#link');
 
-var carousel=[gameOfLife,dungeonCrawler,reactRecipe,twitch,pomodoro,ticTacToe,simon,reactLeaderBoard,scatterplot,barchart,heatmap];
-var first= carousel[0];
-var last= carousel[carousel.length-1];
-forward();
-// initialize
-var current;
-var index;
-var prev;
-var next;
+var carousel=[];
+
 
 console.log(carousel[carousel.length-1]);
-
+document.addEventListener('DOMContentLoaded', function(){
+  fetch("https://raw.githubusercontent.com/CyberPutty/CyberPutty.github.io/master/scripts/carousel.json").then(response=> response.json()).then(function(d){
+  
+   carousel=d.items;
+   setCarousel();
+  });
+});
+function setCarousel(){
+  var first= carousel[0];
+  var last= carousel[carousel.length-1];
+  forward();
+  // initialize
+  var current;
+  var index;
+  var prev;
+  var next;
 $('#forward').on('click',function(){
   
 forward();
@@ -198,6 +136,11 @@ back();
     $projectNote.text(current.notes);
        
   }
+
+
+
+}
+
 
 $('.hamburger').on('click',function(){
   $('.nav ul').toggleClass('toggleMenu');

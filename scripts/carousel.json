@@ -1,57 +1,52 @@
 {
     
    "items":[{
-   "img":"./images/dungeonCrawler.png",
+   "img":"./images/dungeonCrawler.jpg",
     "name" :"Dungeon Crawler React",
     "notes" :"A dungeon crawler using react and vanilla javascript, all floors randomly generated",
     "link":"https://codepen.io/Cyberputty/full/XEagwd/"
    },{
-    "img":"./images/Pomodoro.png",
+    "img":"./images/Pomodoro.jpg",
     "name":"Pomodoro Timer",
     "notes":"A Pomodoro Timer with task list. Drag and drop is utilized to provide one list for brainstorming and one for whatever your currently working on.",
     "link":"https://codepen.io/Cyberputty/full/NXjRgX/"
    },{
-    "img":"./images/Tic-Tac-Toe.png",
-    "name":"Tic Tac Toe",
-    "notes":"The challenge for this was to create the AI logic and a game loop.",
-    "link": "https://codepen.io/Cyberputty/full/QaPwzo/"
-   },{
-    "img":"./images/Simon.png",
+    "img":"./images/Simon.jpg",
     "name":"Simon",
     "notes":"Simon the classic memory game,all vanilla css and javascript",
     "link":"https://codepen.io/Cyberputty/full/aqdOWy/"
    },{
-    "img":"./images/TwitchApp.png",
+    "img":"./images/TwitchApp.jpg",
     "name":"Twitch Notifications",
     "notes":"App using Twitch API for notifications.",
     "link":"https://codepen.io/Cyberputty/full/wydGdM/"
    },{
-    "img":"./images/GameOfLife.png",
+    "img":"./images/GameOfLife.jpg",
     "name":"Conway's Game of Life",
     "notes":"Mathematician Conway's Game of Life: Simulates cell life and death over generations.",
     "link":"https://codepen.io/Cyberputty/full/XEjQqW/"
    },{
-    "img": "./images/barchart.png",
+    "img": "./images/barchart.jpg",
     "name": "D3.js Barchart",
     "notes": "Uses GDP dataset",
     "link": "https://codepen.io/Cyberputty/full/vRarVX/"
    },{
-    "img": "./images/scatterplot.png",
+    "img": "./images/scatterplot.jpg",
     "name": "D3.js Scatterplot",
     "notes": "scatterplot using dataset from alpe d'huez on doping in professional cycling",
     "link": "https://codepen.io/Cyberputty/full/pVRjKQ/" 
    },{
-    "img": "./images/heatmap.png",
+    "img": "./images/heatmap.jpg",
     "name": "D3.js Heatmap",
     "notes": "Heatmap using dataset for global land surface tempurature",
     "link": "https://codepen.io/Cyberputty/full/BxWWWx/"
    },{
-    "img": "./images/Force-Graph.png",
+    "img": "./images/Force-Graph.jpg",
     "name": "D3.js Force-Directed-Graph",
     "notes": "Force directed graph using D3.js using dataset for countries that share borders.",
     "link": "https://codepen.io/Cyberputty/full/KRmzGz/" 
    },{
-    "img": "./images/meteorite-landings.png",
+    "img": "./images/meteorite-landings.jpg",
     "name": "D3.js Meteorite Landings",
     "notes": "Meteorite landings using D3.js, uses wikipedia api and public shape file using geojson.",
     "link": "https://codepen.io/Cyberputty/full/XqgbGR/" 

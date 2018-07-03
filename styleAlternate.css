@@ -5,7 +5,22 @@ body
   margin:0px;
   overflow-x:hidden;
 }
-
+.fullstackImage{
+  
+  width: 70vh;
+}
+.centerText{
+  text-align: center;
+}
+.margin-auto{
+  margin:auto;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
 .row
 { 
   position: fixed;
@@ -219,12 +234,25 @@ a
   background-color: #9dac93;
   display: flex;
   flex-direction: column;
-  height:92.5vh;
+  height:calc(92.5vh * 2);
   justify-content: center;
   align-items: center;
 }
+.fullstack{
+  display:flex;
+  text-align: left !important;
+
+}
+.tech-list{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.tech-list li{
+width: 250px;
+}
 .portfolioltr
 {
+
   letter-spacing: 2px;
   font-family: serif;
   font-size: 3.5vh;
@@ -309,7 +337,7 @@ align-items:center;
 }
 .note
 {
-  height:20vh;
+ 
   font-size: 3vh;
   text-align: center;
 }

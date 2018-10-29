@@ -1,5 +1,6 @@
 /*page setup*/
 body {
+  position: relative;
   width: 100% !important;
   overflow-x: hidden;
   font-family: Cambria;

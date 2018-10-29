@@ -10,6 +10,7 @@ body
   width: 70vh;
 }
 .centerText{
+  font-size: 4vh;
   text-align: center;
 }
 .margin-auto{
@@ -40,7 +41,7 @@ margin-left: 5%;
 margin-right: 5%;
 }
 #projectTitle{
-font-size: 5vh;
+  font-size: 4vh;
 
 }
 
@@ -359,10 +360,6 @@ padding: 40px;
   transform: translateY(-70px); 
 text-align: right;
 
-
-}
-#forward:hover{
-
 }
 
 #back{ 
@@ -371,7 +368,6 @@ text-align: right;
   transform: translateY(-70px);
   vertical-align:middle;
   text-align:left;
- 
 }
 
 
@@ -391,7 +387,6 @@ cursor: pointer;
 }
 .controldim:hover{
   filter:none !important;
-
   text-shadow: 0em 0em 0.2em white;
 }
 .unselectable

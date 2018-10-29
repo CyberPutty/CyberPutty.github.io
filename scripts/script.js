@@ -143,15 +143,15 @@ back();
 
 
 $('.hamburger').on('click',function(){
-  $('.nav ul').toggleClass('toggleMenu');
-  $('.break').html('<hr/>');
-  $('.row').toggleClass('hamMenu');
+  $('.navLinks').toggleClass('toggleMenu');
+  $('.break').html('');
+  // $('.row').toggleClass('hamMenu');
   $('.hamcontainer img').toggleClass('hide');
-  $('ul').append(" <div id='toggleClose'><hr/><a><li id='close'>close</li></a><div>");
+  $('ul').append(" <div id='toggleClose'><li id='close'>close</li></a><div>");
   $('#close').bind('click', function(){
     $('.hamcontainer img').toggleClass('hide');
-    $('.nav ul').toggleClass('toggleMenu');
-    $('.row').toggleClass('hamMenu');
+    $('.navLinks').toggleClass('toggleMenu');
+    // $('.row').toggleClass('hamMenu');
     $('#toggleClose').remove();
 
   });
@@ -160,7 +160,7 @@ $('.hamburger').on('click',function(){
 
 function screenWidth(x) {
   if (x.matches) { // If media query matches
-  $('.nav ul').removeClass('toggleMenu');
+  $('.navLinks').removeClass('toggleMenu');
   $('.break').html('|');
   $('.row').removeClass('hamMenu');
   $('.hamcontainer img').removeClass('hide');

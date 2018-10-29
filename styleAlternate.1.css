@@ -1,13 +1,14 @@
 /*page setup*/
 body {
-  position: relative;
-  width: 100% !important;
-  overflow-x: hidden;
-  font-family: Cambria;
-  background-color: white;
+
 }
 *{
   margin: 0px;
+}
+.container{
+ overflow-x: hidden;
+  font-family: Cambria;
+  background-color: white;
 }
 h1{
  font-size: 2.5em;

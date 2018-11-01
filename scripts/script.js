@@ -167,6 +167,6 @@ function screenWidth(x) {
   } 
 }
 
-var x = window.matchMedia("(min-width: 950px)");
+var x = window.matchMedia("(min-width: 800px)");
 screenWidth(x); // Call listener function at run time
 x.addListener(screenWidth); // Attach listener function on state changes

@@ -9,6 +9,7 @@ body {
  overflow-x: hidden;
   font-family: Cambria;
   background-color: white;
+  /* min-width: 300px; */
 }
 h1{
  font-size: 2.5em;
@@ -410,6 +411,10 @@ body{
     visibility: hidden;
     width:0px;
   }
+  /* .skillGrid img{
+    width: 20px;
+
+  } */
   .carousel img{
     height: 38vh;
     width: 76vh;
@@ -426,4 +431,38 @@ body{
     font-size:4.5em;
   }
 
+}
+@media screen and (max-width:375px){
+  .hamburger{
+    width: 40px;
+    height: 40px;
+  }
+  .social{
+    
+    width:20px;
+    height: 20px;
+  }
+  .skillGrid{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .skillGrid img{
+    position: absolute !important;
+    visibility: hidden !important;
+  }
+  .carousel img{
+    height: 38vw;
+    width: 76vw;
+  }
+  #forward{
+    top: 21vw;
+    left: 34vw;
+    font-size:4.5em;
+  }
+  
+  #back{
+    top: 21vw;
+    right:34vw;
+    font-size:4.5em;
+  }
 }

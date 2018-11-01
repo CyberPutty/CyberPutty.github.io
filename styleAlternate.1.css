@@ -441,13 +441,13 @@ input {
   #forward {
     top: 21vw;
     left: 34vw;
-    font-size: 4.5em;
+    font-size: 5em;
   }
 
   #back {
     top: 21vw;
     right: 34vw;
-    font-size: 4.5em;
+    font-size: 5em;
   }
 }
 @media screen and (max-height: 375px) {

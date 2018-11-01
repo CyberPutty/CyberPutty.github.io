@@ -167,6 +167,7 @@ grid-template-rows: repeat(3,1fr);
 grid-template-columns: repeat(6,minmax(75px,1fr));
 grid-area: 3/2/3/9;
 justify-items: stretch;
+align-items: center;
 
 }
 .skill{
@@ -399,7 +400,7 @@ body{
   grid-template-columns: repeat(4,minmax(25px,1fr));
   }
   .skill{
-    height: 50px;
+    height: 30px;
   }
  
 }
@@ -411,10 +412,7 @@ body{
     visibility: hidden;
     width:0px;
   }
-  /* .skillGrid img{
-    width: 20px;
-
-  } */
+  
   .carousel img{
     height: 38vh;
     width: 76vh;

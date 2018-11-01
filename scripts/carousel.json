@@ -52,17 +52,12 @@
     "link": "https://codepen.io/Cyberputty/full/XqgbGR/" 
    },
    {
-       "img":"./images/",
+       "img":"./images/voting-app.png",
        "name":"Voting App",
        "notes": "FullStack voting app using React, D3.js, MongoDB, and Express.Website is hosted by a free server on Heroku please allow a few seconds to spin up.",
        "link": "https://voting-app-armadillo.herokuapp.com/"
    }
    
-   
-
-
-
-
 
 ]
 

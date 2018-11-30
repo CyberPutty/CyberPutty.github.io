@@ -1,0 +1,49 @@
+Link{
+    text-decoration: 'none';
+    color: 'transparent';
+    background-color:'transparent'; 
+}
+.logo{
+    
+    font-size: 42px;
+}
+.logo span{
+    font-size: 24px;
+}
+.navContainer{
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navContainer>*{
+width: 20%;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left:20%;
+    margin-right: 20%;
+}
+.inline{
+    text-align: center;
+    padding: 0px;
+  
+}
+.inline li{
+    background-color: transparent !important;
+    display: inline;
+    font-size: 28px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.about :nth-child(1){
+ color: white;
+}
+.projects :nth-child(2){
+ color: white;
+}
+.contact :nth-child(3){ 
+ color: white;
+}

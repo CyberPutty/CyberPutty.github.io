@@ -1,0 +1,18 @@
+.projectsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.projectsContainer >*{
+    width: 250px;
+    height: 250px;
+    margin-left:4%;
+    margin-right: 4%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+}
+

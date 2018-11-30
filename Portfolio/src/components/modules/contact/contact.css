@@ -1,0 +1,40 @@
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10%;
+}
+form >*{
+    display:flex;
+    flex-direction: column;
+    margin: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+}
+form text{
+    font-family: 'Righteous', cursive;
+    font-size: 24px;
+
+}
+form input{
+    width: 350px;
+    border: 1.5px solid;
+    padding: 5px;
+}
+form textarea{
+    width: 350px;
+    border: 1.5px solid;
+    padding: 5px;
+    height: 150px;
+}
+form .send{
+    width:100px;
+    margin-top:20px;
+}

@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Righteous|Source+Sans+Pro|Roboto+Slab");
+body{
+   
+    overflow-x: hidden;
+    background-image: linear-gradient(to bottom right,#bfbfc6,#dfe3e4);
+    font-family: 'Righteous', cursive;
+    color: #333333;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}

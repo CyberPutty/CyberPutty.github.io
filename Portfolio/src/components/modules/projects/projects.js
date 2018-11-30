@@ -1,7 +1,7 @@
 import React from 'react'
 import './projects.css'
 import Modal from '../modal/modal'
-import projects from './carousel'
+
 
 class Projects extends React.Component{
 
@@ -16,8 +16,12 @@ constructor(props){
 
 
 componentDidMount(){
+    fetch("https://raw.githubusercontent.com/CyberPutty/CyberPutty.github.io/master/Portfolio/src/components/modules/projects/carousel.js")
+    .then(res=>res.json).then(data=>{
 
-    this.setState({projectlist : projects.items});
+        this.setState({projectlist : data.items});
+    });
+    
     
 }
 modal=(event)=>{
@@ -25,7 +29,6 @@ modal=(event)=>{
 let id=event.target.id;
     
     this.setState({selected:this.state.projectlist[id], show:"show"});
-    console.log(this.state.selected);
 
     }
  
@@ -41,7 +44,7 @@ render(){
  const handClick=(event)=>{
      this.modal(event);
  }
-console.log(this.state.projectlist);
+
     return(<div className="projectsContainer">
      {this.state.projectlist.map(function(item,index){
          

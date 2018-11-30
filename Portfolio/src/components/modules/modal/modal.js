@@ -2,7 +2,6 @@ import React from 'react'
 import './modal.css'
 const Modal = ({ selected, show, hide }) => {
 
-    console.log(selected.name);
     return (
 
         <div className={"modal " + show}>

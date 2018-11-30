@@ -1,5 +1,5 @@
 
-const projects={
+{
     
    "items":[{
    "img":"https://res.cloudinary.com/duytlootx/image/upload/v1543572429/portfolio/dungeonCrawler_kyhfn6.jpg",
@@ -51,4 +51,3 @@ const projects={
 
 }
 
-export default projects;
